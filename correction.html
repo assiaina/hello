@@ -1,0 +1,252 @@
+<html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam1</title>
+    <style>
+     table{
+        background-color: blanchedalmond;
+     }
+     .CL2{
+        height: 200px;
+    width: 100px;
+        border-style: solid;
+    border-left-color: yellow;
+    border-right-color: yellow;
+    border-top-color: black;
+    border-bottom-color: black;    
+    
+    position:FIXED;
+  
+   right:0;
+bottom:0;
+
+     }
+ 
+    div.cl1{
+        border: solid 2px red;
+        background-color: green;   
+        opacity: 30%;
+        width : 100%;
+        height: 40px ;
+    }
+    div.cl3{
+        float: 3;
+        border: 30%;
+        background-color: red;
+        
+    }
+    ul{
+        
+    list-style-type: none;
+  background-color: tomato;
+    }
+    li{ display: inline-block ;
+        padding-right: 20px ;
+    }
+    .cldv{
+        
+      
+        display: inline-block;
+
+        height: 100px;
+      width: 30%;
+      background-color: brown;
+      float:left;
+      text-align: center;
+   
+      
+    }
+    p{
+        visibility: hidden;
+    }
+    p:hover{
+        visibility: visible;
+     
+    }
+    #div2{
+    visibility: visible;
+        background-color: rgb(18, 140, 247);
+        
+    }
+    </Style>
+</head>
+<body >
+    <!--mode sombre-->
+<button class="mode" style="float: right" onmouseover="changeMode()" onmouseout="chag()">mode sombre</button>
+
+
+
+    <h1>tableau:</h1>
+ <table border="1" width="100%">
+    <tr bgcolor="blue">
+        <th>marque</th>
+        <th>modele</th>
+        <th colspan="3">fiche technique</th>
+    </tr>
+<tr>
+   <td rowspan="2">Mercedes</td>
+   <td>CLA</td>
+   <td>150ch</td>
+   <td>Diesel </td>
+   <td>4,1</td>
+ 
+</tr>
+<tr>
+<td>Clas C</td>
+<td>180ch</td>
+<td>Diesel</td>
+<td>4,7</td>
+</tr>
+<tr>
+    <td rowspan="2"> Audi</td>
+    <td>A3</td>
+    <td>180ch</td>
+    <td>Diesel</td>
+    <td>5,1</td>
+</tr>
+<tr>
+    <td>Q5</td>
+    <Td>190ch</Td>
+    <td>Diesel</td>
+    <td>5,7</td>
+</tr>
+ </table>
+
+
+
+
+<h1>Formulaire:</h1><hr width="50%" align="left">
+<label for="Xnom"> Entrer votre nom:</label>
+<input type="text" name="no" id="Xnom"><hr width="50%" align="left">
+<h2>cachez votre tranche d'age:</h2>
+<input type="radio" name="ag" id="moinsde20" >
+<label for="moins20">Moins de 20 ans</label><br>
+
+<input type="radio" name="ag" id="de20a25" checked>
+<label for="20a25">Moins de 20 a 25 ans</label><br>
+
+<input type="radio" name="ag" id="plusde25">
+<label for="pluide25">plus de 25 ans </label><br>
+<hr width="50%" align="left">
+
+
+
+
+
+<h2>quels sont vos modules préférés?</h2>
+
+<input type="checkbox" name="TW" id="Tech de web">
+<label for="TW">Technologie de web</label><br>
+
+<input type="checkbox" name="COMP" id="COMPl">
+<label for="COMP">Compilation</label><br>
+
+<input type="checkbox" name="C" id="C1">
+<label for="C1">Language C</label><br>
+<hr width="50%" align="left">
+<input type="button" name="soummetre" id="soummetre" value="semmetre">
+<input type="button" name="réenitialiser" id="reset" value="réinitialiser">
+
+
+<p>le role de css est de separer la mise en forme du contenu de document</p>
+
+
+<h2>liste non ordonné</h2>
+<ul>
+    <li><a href="">Accueil </a>  </li>
+    <li>Departements  </li>
+    <li>Laboratoires  </li>
+    <li>Infos utiles  </li>
+</ul>
+<div class="cl1" >
+</div>
+<div class="cldv" >
+ DIV 1</div>
+<div class="cldv" id="div2" >
+    <p> HHHHHHHhh</p></div>
+<div class="cldv" >
+DIV3</div>
+
+<h2>Remplir le formulaire suivant:</h2>
+<!--formulaire-->
+<div border="10">
+    <!--nom-->
+<label for="nom" > nom:  </label ><br>
+    <input type="text" name="lnom" id="nom"><br>
+<!--prenom-->
+<label for="prenom" > prenom:  </label ><br>
+    <input type="text" name="fnom" id="prenom"><br>  
+<!--age-->
+<label for="age" > age:  </label ><br>
+    <input type="text" id="age"><br>
+<!--sexe-->
+<label>Choisi votre sexe: </label><br>
+<input type="radio" id="male" name="sexe"> 
+<label for="male">homme</label><br>
+<input type="radio" id="female" name="sexe"> 
+<label for="female">femme</label><br>
+
+<!--button-->
+<input  type="button" onClick="submit()" value="Se connecter a Netflix" id="submit" >
+</div><br>
+<div display="none" id="holder">
+    <label for="select" > choisir votre preferences cinematographiques :</label><br>
+    <select name="select" id="select" >
+        <option value="anime">Anime</option> 
+        <option value="comedie">Comidie</option> 
+        <option value="Thriller">Thriller</option> 
+        <option value="Horreur">Horreur</option> 
+    </select>
+
+</div> <br>
+<!--changer le style button && decor-->
+<button id="change-style" onclick="changeStyle()"  >changez le style</button>
+<!--decor-->
+
+    
+<img src="me.jpg.jpg" style="display: block;"/><br>
+<p Bonjour cher <u style="color: red;"> client </u> , vous pouvez changez le <u>style </u> de votre page sur cette fenetre!> </p>
+    <select>
+        <option value="sombre">sombre</option>
+        <option value="normal"> normal</option>
+        <option value="windows">windows</option>
+    </select>
+
+
+    <script>
+        /* formulaire */
+        let button = document.getElementById("submit"),
+          select = document.getElementById("select"),
+          holder = document.getElementById("holder");
+        /* sumbit la forlmulaire*/
+        function submit() {
+          let age = document.getElementById("age").value;
+          if (age >= 16) holder.style.display = "block";
+          else alert("vous ne pouvez pas se connecte");
+        }
+  
+        /* mode sombre */
+        function changeMode() {
+       //   document.documentElement.style.colorScheme = "dark"
+       document.body.style.backgroundColor="black"; 
+       document.body.style.color= "white"; 
+
+
+    }
+    function chag() {
+       //   document.documentElement.style.colorScheme = "dark"
+       document.body.style.backgroundColor=''; 
+       document.body.style.color= ''; 
+
+
+    }
+        /* changer le style*/
+        function changeStyle() {
+          document.getElementById("decor").style.display = "block";
+        }
+      </script>
+
+</body>
+</html>

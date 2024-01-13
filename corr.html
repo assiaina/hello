@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #sel{
+            display :none;
+        }
+    </style>
+   
+    <title>Document</title>
+</head>
+<body>
+   
+    <h2>Remplir le formulaire suivant:</h2>
+<!--formulaire-->
+<div border="10">
+    <!--nom-->
+<label for="nom" > nom:  </label ><br>
+    <input type="text" name="lnom" id="nom"><br>
+<!--prenom-->
+<label for="prenom" > prenom:  </label ><br>
+    <input type="text" name="fnom" id="prenom"><br>  
+<!--age-->
+<label for="age" > age:  </label ><br>
+    <input type="text" id="age"><br>
+<!--sexe-->
+<label>Choisi votre sexe: </label><br>
+<input type="radio" id="male" name="sexe"> 
+<label for="male">homme</label><br>
+<input type="radio" id="female" name="sexe"> 
+<label for="female">femme</label><br>
+<input type="button" id ="but1" value="Netflix" onclick= "
+let t=document.getElementById('age').value;
+if( t < 16 )
+    { alert('dor ghayerha' );}
+else{
+ var r=document.getElementById('age');
+    sel.style.display = 'block';
+}
+
+">
+<select id="sel">
+    <option>comdien </option>
+    <option>Thriller</option>
+    <option>aa</option>
+    <option>bbb</option>
+</select>
+</body>
+</html>
